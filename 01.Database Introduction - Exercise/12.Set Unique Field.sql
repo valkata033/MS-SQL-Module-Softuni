@@ -1,0 +1,6 @@
+ALTER TABLE [Minions]
+DROP CONSTRAINT PK_IdUsername
+ALTER TABLE [Minions]
+ADD PRIMARY KEY(Id)
+ALTER TABLE [Minions]
+ADD CHECK(LEN(Username) >= 3)
